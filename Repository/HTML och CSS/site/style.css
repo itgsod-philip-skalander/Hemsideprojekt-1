@@ -35,6 +35,11 @@ h3 {
     font-family: "mainfont";
 }
 
+h2 {
+    font-size: 25px;
+    font-family: "mainfont";
+}
+
 h1 {
     font-size: 86px;
     font-family: "mainfont";
@@ -178,4 +183,17 @@ ul{
     margin-top: 30px;
 }
 
+#googleMap{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: solid black 5px;
+}
+
+#kartatext{
+    margin-left:auto;
+    margin-right:auto;
+    width: 720px;
+    height: 100px;
+}
 

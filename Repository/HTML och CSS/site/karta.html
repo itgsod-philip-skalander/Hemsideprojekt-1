@@ -4,6 +4,41 @@
     <meta charset="UTF-8">
     <title>Restaurang Tranan</title>
     <link rel="stylesheet" href="./style.css" type="text/css">
+    <script
+            src="http://maps.googleapis.com/maps/api/js">
+    </script>
+
+    <script>
+        function initialize()
+        {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742,-0.120850),
+                zoom:9,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var mapProp2 = {
+                center: new google.maps.LatLng(51.508742,-0.120850),
+                zoom:9,
+                mapTypeId: google.maps.MapTypeId.SATELLITE
+            };
+            var mapProp3 = {
+                center: new google.maps.LatLng(51.508742,-0.120850),
+                zoom:9,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            };
+            var mapProp4 = {
+                center: new google.maps.LatLng(51.508742,-0.120850),
+                zoom:9,
+                mapTypeId: google.maps.MapTypeId.TERRAIN
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            var map2 = new google.maps.Map(document.getElementById("googleMap2"),mapProp2);
+            var map3 = new google.maps.Map(document.getElementById("googleMap3"),mapProp3);
+            var map4 = new google.maps.Map(document.getElementById("googleMap4"),mapProp4);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 <body>
     <div id="header">
@@ -35,6 +70,10 @@
         </a>
     </div>
     <div id="block">
+        <div id="googleMap" style="width:500px;height:380px;"></div>
+        <div id="kartatext">
+            <h2>Vi har över 50 olika Restauranger över världen, här kan du se allihopa.</h2>
+        </div>
 
     </div>
 
